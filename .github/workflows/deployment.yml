@@ -9,7 +9,9 @@ on:
 
 jobs:
   deploy:
-    runs-on: centos-latest
+    runs-on: 
+      - self-hosted
+      - label-1
 
     steps:
       - name: Checkout code
